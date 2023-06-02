@@ -1,34 +1,101 @@
 @charset "UTF-8";
 
-/* reset  */
+/* reset */
 body {
-    width : 100%; 
-    margin: 0 auto; 
+    width : 100%;
+    margin: 0 auto;
     padding: 0;
-}  /*외우기 (margin과 padding)*/
+}
 a {
     text-decoration: none;
-} /*링크를 걸때 색이 변하는것을 지우는 코드*/
+}
 li {
     list-style: none;
-} /*자동 꾸밈 끄기*/
+}
 
 /* header */
 header {
-    width: 1200px; 
+    display : flex;
+    width: 1200px;
     /* height: 100px; */
     background-color: #111;
-}  /*RGB사용 0~225까지 각각 ex)255,255,255=하양 [#f(f)f(f)f(f)]=하양*/
-.logo{
-    float:left;
-    width: 200px; 
-    height: 100px; 
+}
+.logo {
+    width: 200px;
+    height: 100px;
     background-color: #222;
 }
-.menu{
-    float:left;
+.menu {
+    
     width: 1000px;
     height: 100px;
     background-color: #333;
 }
+.menu > ul{
+    display: flex;
+    width: 600px;
+    height: 40px;
+}
+.menu li{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: rgb(255, 0, 0);
+}
+.submenu{
+    padding:0;
+}
+/* image slide */
+#slide{
+    width: 1200px;
+    height: 300px;
+    background-color: #444;
+}
+
+/* contents */
+#contents{
+    display:flex;
+    width: 1200px;
+    height: 200px;
+}
+.notice{
+    width: 400px;
+    height: 200px;
+    background-color: #555;
+}
+.banner{
+    width: 400px;
+    height: 200px;
+    background-color: #666;
+}
+.shortcut{
+    width: 400px;
+    height: 200px;
+    background-color: #555;
+}
+
+/* footer */
+#footer{
+    display: flex;
+    width: 1200px;
+    height: 100px;
+}
+.bt-logo{
+    width : 200px;
+    height: 100px;
+    background-color: #777;
+}
+.copyright{
+    width: 800px;
+    height: 100px;
+    background-color: #888;
+}
+.sns{
+    width : 200px;
+    height: 100px;
+    background-color: #777;
+}
+
+
 
